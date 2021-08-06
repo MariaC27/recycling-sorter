@@ -7,7 +7,8 @@ class App extends Component{
 
     state = {
       //at first, no file is selected
-      selectedFile: null
+      selectedFile: null,
+      //source: null,
     };
     
     // on file select (from the pop up)
@@ -33,13 +34,28 @@ class App extends Component{
     
       // Request made to the backend api
       // Send formData object
-      axios.post("api/uploadfile", formData);
+      axios.post("https://10.0.2.2:3000/", formData);
     };
 
     // conditional render based on whether file was chosen
     fileData = () => {
     
       if (this.state.selectedFile) {
+        // axios
+        // .get(
+        //   'api/uploadfile',
+        //   { responseType: 'arraybuffer' },
+        // )
+        // .then(response => {
+        //   const base64 = btoa(
+        //     new Uint8Array(response.data).reduce(
+        //       (data, byte) => data + String.fromCharCode(byte),
+        //       '',
+        //     ),
+        //   );
+        //   this.setState({ source: "data:;base64," + base64 });
+        //   console.log(this.state.source);
+        // });
          
         return (
           <div>
@@ -50,6 +66,7 @@ class App extends Component{
               Last Modified:{" "}
               {this.state.selectedFile.lastModifiedDate.toDateString()}
             </p>
+            {/*<img src={this.state.source} alt="file"/>*/}
           </div>
         );
       } else {
@@ -73,7 +90,11 @@ class App extends Component{
               Team 13 Final Project
             </h2>
             <p>upload an image below and our model will analyze it to determine which type of 
-              recyclable it is (if it is recyclable)
+              recyclable it is (if it is recyclable). after classifying which type of recyling the item is,
+              the end goal is to have a garbage bin or garbage truck sort the item accordingly. this
+              facilitates recycling from the public, as they are not required to sort items themselves,
+              and makes things easier for the recycling companies as the items can be automatically sorted
+              by the model.
             </p>
 
             <div>
