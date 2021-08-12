@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import './App.css';
-
 import axios from 'axios';
 
 class App extends Component{
@@ -97,13 +96,9 @@ class App extends Component{
               by the model.
             </p>
 
-            <div>
-                <input type="file" onChange={this.onFileChange} />
-                <button onClick={this.onFileUpload}>
-                  Upload!
-                </button>
-            </div>
-            {this.fileData()}
+            <script src="https://anvil.works/embed.js" async></script>
+            <iframe className="anvil" data-anvil-embed src="https://KQMAGRBRPASIOOAM.anvil.app/L6W5CCGZBZOHCGJUCZZ3ECB7"></iframe>
+        
           </header>
         </div>
       );
