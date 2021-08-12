@@ -98,7 +98,6 @@ class App extends Component{
 
             <script src="https://anvil.works/embed.js" async></script>
             <iframe className="anvil" data-anvil-embed src="https://KQMAGRBRPASIOOAM.anvil.app/L6W5CCGZBZOHCGJUCZZ3ECB7"></iframe>
-        
           </header>
         </div>
       );
