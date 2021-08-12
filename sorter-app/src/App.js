@@ -83,17 +83,23 @@ class App extends Component{
       return (
         <div className="App">
           <header className="App-header">
-            <h1>Recycling Sorter</h1>
-            <h2>
-              MIT SureStart Program
-              Team 13 Final Project
-            </h2>
-            <p>upload an image below and our model will analyze it to determine which type of 
-              recyclable it is (if it is recyclable). after classifying which type of recyling the item is,
-              the end goal is to have a garbage bin or garbage truck sort the item accordingly. this
-              facilitates recycling from the public, as they are not required to sort items themselves,
-              and makes things easier for the recycling companies as the items can be automatically sorted
-              by the model.
+            <h2>Recycling Sorter</h2>
+            <h3>
+            Deep Learning Track Team 13 Final Project
+              </h3>
+              <h3>
+              MIT SureStart Program 2021
+              
+            </h3>
+            <p>Upload an image below and our model will analyze it to determine which type of 
+              recyclable it is (if it is recyclable). Your image will fed directly to the model that we developed
+              and the model's classification will be displayed on the screen. This website is just a demo 
+              of the software; the goal is to use this software as part of a physical device that can be used in offices 
+              and schools to automatically sort types of recycling.
+            </p>
+
+            <p>Please note that this model runs at about 70% accuracy, so there occasionally may be errors. If 
+              you would like to upload another image, please refresh the page and then upload the other image.
             </p>
 
             <script src="https://anvil.works/embed.js" async></script>
