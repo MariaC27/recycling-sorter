@@ -8,4 +8,4 @@ Website was created using React.js, and has an embeeded Anvil server page which 
 
 ## Deployed here: https://optimal-stocking.surge.sh/
 
-Note that the model has around 70% accuracy so there may be errors. To upload another image, refresh the page.
+Important: website only works when the anvil server is running and connected in this Google Colab Notebook: https://colab.research.google.com/drive/1Le5qMNuMhOGi02Tp9DHsPeulkT-qvQ38?usp=sharing. The dataset used is called trashnet which can be downloaded here: https://github.com/garythung/trashnet. Note that the model has around 70% accuracy so there may be errors. To upload another image, refresh the page.
